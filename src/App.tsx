@@ -8,7 +8,16 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <Toaster position="top-right" />
+      <Toaster 
+        position="top-right" 
+        toastOptions={{
+          duration: 3000,
+          style: {
+            borderRadius: "12px",
+            padding: "14px 16px",
+          },
+        }} 
+      />
       <nav className="bg-white shadow-md mb-8">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex gap-4 py-4">
